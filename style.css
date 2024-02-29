@@ -1,0 +1,304 @@
+/* reset */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    /* max-width: 100%; */
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+
+/* ----------------header ---------------*/
+
+.header {
+    height: 100vh;
+    width: 100%;
+}
+
+.nav-bar {
+    background-color: rgba(128, 128, 128, 0.02);
+    display: flex;
+    justify-content: space-around;
+    flex: 2 0 2rem;
+    padding: .8em;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.452);
+    position: sticky;
+}
+
+.logo {
+    height: 46px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: .1;
+    text-transform: capitalize;
+    position: fixed;
+    top: 1;
+}
+
+.nav-list a li {
+    padding: .6em;
+    color: black;
+    font-family: 'Poppins';
+    font-weight: 500;
+}
+
+
+/* nav hover effects */
+
+.hero {
+    /* background-color: #b8dde3; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+/* ---hero text---- */
+
+.hero-img img {
+    height: 550px;
+    margin: 1em;
+}
+
+.hero-text {
+    margin-top: 2.4em;
+    position: relative;
+}
+
+.hero-text h1 span {
+    font-family: 'Karla', sans-serif;
+    text-transform: capitalize;
+    font-size: 2em;
+    letter-spacing: 2px;
+    line-height: 88px;
+    display: block;
+    padding-inline: 2rem;
+    margin-left: 50px;
+}
+
+
+/* -----ctr learn more-- */
+
+.ctr-prim a {
+    padding: .8em 1.4em;
+    text-transform: capitalize;
+    color: #fff !important;
+    position: absolute;
+    top: 50%;
+    left: 24%;
+    margin: 4em;
+    background-color: red;
+    border-radius: 25px;
+    font-family: 'poppins';
+}
+
+.ctr-prim:hover {
+    background-color: #fff;
+    transform: allease .2s;
+}
+
+
+/* ---------course cards--------- */
+
+.stacked {
+    display: grid;
+}
+
+.container {
+    max-width: 100rem;
+    margin-inline: auto;
+    padding-inline: 2rem;
+}
+
+.card {
+    background-color: rgb(253, 0, 0);
+    border: 1px solid rebeccapurple;
+}
+
+.product-grid {
+    display: grid;
+    gap: 1.5em;
+}
+
+@media(min-width:40em) {
+    .span-2 {
+        grid-column: 2/4;
+    }
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.card-content {
+    color: black;
+    background-color: rgba(44, 233, 60, 0.384);
+    text-transform: capitalize;
+    font-family: 'karla';
+}
+
+.card:hover {
+    transform: scale(1.09);
+    transition: ease-in-out .3s;
+}
+
+.card-title {
+    padding: .6em;
+    letter-spacing: 1px;
+}
+
+.card-price {
+    float: right;
+    padding: .8em;
+    color: blue;
+    font-family: 'poppins';
+    letter-spacing: 1px;
+    font-size: 1.2em;
+    margin-top: 1em;
+}
+
+.card-description {
+    padding: .8em;
+}
+
+.course-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+    font-family: 'karla';
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* about  */
+
+.about-title {
+    text-transform: capitalize;
+    font-family: 'poppins';
+    margin-top: 4em;
+}
+
+.about-title-prim {
+    text-align: center;
+    font-family: 'karla';
+    font-weight: 700;
+    font-size: 3em;
+    color: black;
+}
+
+.about-des,
+.about-lm {
+    width: 60%;
+    text-align: center;
+    margin-left: 12em;
+}
+
+.about-lm {
+    padding: 1em;
+    margin-left: 14em;
+    margin-top: 2em;
+}
+
+.about-card {
+    background-color: #5624d0;
+    color: #fff;
+    padding: 1em;
+}
+
+.about-grid {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 10em;
+}
+
+.about-out {
+    font-family: 'poppins';
+    text-transform: capitalize;
+}
+
+.about-grid span {
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+.ab-card-titles {
+    padding: 1.2em;
+    margin-left: 1.9em;
+}
+
+
+/* ------footer */
+
+.footer {
+    color: #fff;
+    background-color: #1c1d1f;
+    text-transform: capitalize;
+    font-family: 'poppins';
+    margin-top: 8em;
+}
+
+.social-btns {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    border-bottom: 1px solid #fff;
+}
+
+.social-btns-prim {
+    display: flex;
+}
+
+.social-btns-prim h3 {
+    margin-right: 30px;
+}
+
+.social-btns-prim img {
+    margin-right: 20px;
+}
+
+.social-btns img {
+    fill: #fff;
+}
+
+svg {
+    fill: #fff !important;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3em;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #fff !important;
+}
+
+.copy h4 {
+    text-align: end;
+    font-size: x-small;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+
+/* animation */
